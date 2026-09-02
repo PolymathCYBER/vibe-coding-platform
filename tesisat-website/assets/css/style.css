@@ -1,5 +1,5 @@
 /* =========================================================
-   Güven Tesisat — Temel Site İskeleti
+   Öz Aksu Sıhhi Tesisat — Temel Site İskeleti
    Tokens, reset, layout ve tüm bileşen stilleri
    ========================================================= */
 
@@ -291,6 +291,10 @@ p{ margin: 0; }
 .menu-toggle[aria-expanded="true"] .icon-open{ display: none; }
 .menu-toggle[aria-expanded="true"] .icon-close{ display: block; }
 
+@media (max-width: 1180px){
+  .nav-phone{ display: none; }
+}
+
 @media (max-width: 960px){
   .nav-list{
     position: fixed;
@@ -310,7 +314,6 @@ p{ margin: 0; }
   .nav-list.is-open{ transform: translateX(0); }
   .nav-list .nav-link{ padding-block: .9rem; border-bottom: 1px solid var(--border); font-size: 1.05rem; }
   .nav-list .nav-link::after{ display: none; }
-  .nav-phone{ display: none; }
   .menu-toggle{ display: inline-flex; }
   .nav-backdrop{
     display: none;

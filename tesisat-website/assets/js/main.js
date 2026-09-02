@@ -1,4 +1,4 @@
-/* Güven Tesisat — ortak site davranışları (menü, scroll efektleri, form, vb.) */
+/* Öz Aksu Sıhhi Tesisat — ortak site davranışları (menü, scroll efektleri, form, vb.) */
 (function () {
   "use strict";
 
