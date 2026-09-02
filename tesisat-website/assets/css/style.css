@@ -822,24 +822,24 @@ p{ margin: 0; }
 .value-card h3{ font-size: 1.02rem; margin-bottom: .45rem; }
 .value-card p{ font-size: .85rem; color: var(--ink-500); }
 
-.team-grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.team-grid{ max-width: 440px; margin-inline: auto; }
 .team-card{
   text-align: center;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2rem 1.25rem;
+  padding: 2.5rem 2rem;
   transition: transform .22s var(--ease), box-shadow .22s var(--ease);
 }
 .team-card:hover{ transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.team-card .avatar-circle{ width: 76px; height: 76px; font-size: 1.3rem; margin: 0 auto 1.1rem; }
-.team-card strong{ display: block; font-family: var(--ff-heading); color: var(--ink); margin-bottom: .25rem; }
+.team-card .avatar-circle{ width: 88px; height: 88px; font-size: 1.5rem; margin: 0 auto 1.1rem; }
+.team-card strong{ display: block; font-family: var(--ff-heading); font-size: 1.1rem; color: var(--ink); margin-bottom: .25rem; }
 .team-card span{ font-size: .82rem; color: var(--accent); font-weight: 600; }
+.team-bio{ margin-top: .9rem; font-size: .87rem; color: var(--ink-500); line-height: 1.6; }
 
 @media (max-width: 960px){
   .about-grid{ grid-template-columns: 1fr; }
   .values-grid{ grid-template-columns: repeat(2, 1fr); }
-  .team-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---------- Footer ---------- */
@@ -968,6 +968,5 @@ p{ margin: 0; }
   .testimonial-grid{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: 1fr 1fr; }
   .values-grid{ grid-template-columns: 1fr; }
-  .team-grid{ grid-template-columns: 1fr; }
   .cta-banner{ flex-direction: column; align-items: flex-start; }
 }
